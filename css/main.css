@@ -1,0 +1,340 @@
+@charset "UTF-8";
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #fff; }
+
+body {
+  margin-bottom: 60px; }
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1600px;
+  min-width: 480px; }
+
+.tomatoes {
+  margin: 0 auto;
+  width: 100%;
+  background: url("../img/main_image.jpg") no-repeat;
+  box-shadow: inset 1px -200px 200px 1px rgba(10, 10, 50, 0.5);
+  text-align: center;
+  height: 880px;
+  box-shadow: inset, 10px, 100px, 100px, rgba(15, 125, 125, 0.9); }
+
+.logo-pic {
+  position: relative;
+  left: -40%; }
+
+.navigation {
+  color: #fff;
+  float: right;
+  position: relative;
+  top: -45px; }
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Lato, serif;
+    font-size: 1em;
+    font-weight: 700; }
+  .navigation .navigation-option {
+    display: inline-block;
+    margin: 0 70px 0 0;
+    float: left; }
+    .navigation .navigation-option .hamburger-menu-button {
+      width: 20px;
+      height: 20px; }
+    .navigation .navigation-option .layer {
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      margin: 4px 0 4px 0; }
+  .navigation a:hover {
+    color: #f65007; }
+  .navigation .hamburger-menu-button:hover .layer {
+    background-color: #f65007; }
+
+.tomatoes .minor-header {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
+  font-family: TimesNewRoman, serif;
+  position: relative;
+  top: 18%; }
+
+.tomatoes h1 {
+  margin: 0 auto;
+  position: relative;
+  top: 17%;
+  font-size: 7em;
+  font-weight: 600;
+  font-family: Lato, Arial, serif;
+  color: #fff;
+  font-weight: 600;
+  text-align: center; }
+
+.btn-get-started {
+  width: 300px;
+  height: 75px;
+  text-align: center;
+  padding: 21px 0;
+  font-family: Lato, serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  top: 155px; }
+  .btn-get-started:hover {
+    color: #f65007;
+    background-color: #fff; }
+  .btn-get-started:active {
+    top: 156px; }
+
+.h3-like {
+  font-family: Lato, serif;
+  color: #fff;
+  font-size: 1em;
+  position: relative;
+  top: 25%;
+  text-align: center; }
+
+.h3-like a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em; }
+
+.h3-like a:hover {
+  color: #f65007; }
+
+.threesome {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto 100px auto; }
+  .threesome .threesome-block {
+    text-align: center; }
+  .threesome .cook, .threesome .money, .threesome .sandwich {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    background: url("../img/threesome_sprite.png") no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    transition: 0.5s ease; }
+    .threesome .cook:hover, .threesome .money:hover, .threesome .sandwich:hover {
+      transform: scale(1.15); }
+  .threesome .sandwich {
+    background-position: -2px -150px; }
+  .threesome .money {
+    background-position: -2px -65px; }
+  .threesome .cook {
+    background-position: -2px 10px; }
+  .threesome .threesome-h5 {
+    font-family: Lato, Arial, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    position: relative;
+    top: 40px; }
+  .threesome .threesome-line {
+    position: relative;
+    top: 30px;
+    margin: 0 auto; }
+  .threesome .threesome-lorem {
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+    top: 80px;
+    text-align: center;
+    font-family: TimesNewRoman, serif;
+    font-size: 1.2em;
+    position: relative;
+    top: 30px; }
+
+.fudi-app {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  height: 880px; }
+
+.phone-pic img {
+  float: left; }
+
+.app-preview {
+  margin: 0 auto; }
+
+.app-header {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-top: 50px;
+  font-family: Lato, Arial, serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #000; }
+
+.app-line {
+  float: left; }
+
+.app-description {
+  display: inline-block;
+  float: left;
+  text-align: justify;
+  font-family: Lato, Arial, serif;
+  font-size: 1.2em;
+  color: #888; }
+
+.app-shops {
+  float: left; }
+
+/*Карусель*/
+#carousel-example-generic {
+  background: #4a3949 url(../img/bgcooking.png) 100% 100% no-repeat;
+  background-position: center;
+  height: 400px;
+  max-width: 1600px;
+  margin: 0 auto; }
+
+#carousel-example-generic img {
+  margin: 50px auto 0 auto; }
+
+.carousel-inner {
+  height: 100%; }
+
+.carousel-caption {
+  font-family: Lato, serif;
+  font-weight: 200;
+  font-size: 2em;
+  text-align: center;
+  color: #ccc;
+  position: static;
+  top: 100px; }
+  .carousel-caption .feedback-sign {
+    font-size: 16pt;
+    font-style: italic; }
+
+.cuisines h5 {
+  font-family: Lato, Arial, serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #000;
+  margin-top: 50px;
+  text-align: center; }
+
+.div-line {
+  text-align: center;
+  margin: 0 auto; }
+
+.cuisines-pics {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1600px; }
+  .cuisines-pics .food-shot {
+    width: 320px;
+    height: 225px;
+    float: left;
+    box-shadow: inset 0px 0px 25px 1px rgba(10, 10, 10, 0.3), inset 0px 0px 75px 15px rgba(255, 255, 255, 0.5); }
+    .cuisines-pics .food-shot:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      box-shadow: none;
+      transition: 0.4s ease; }
+  .cuisines-pics #italian {
+    background: url("../img/italian.jpg") no-repeat; }
+  .cuisines-pics #indian {
+    background: url("../img/indian.jpg") no-repeat; }
+  .cuisines-pics #french {
+    background: url("../img/french.jpg") no-repeat; }
+  .cuisines-pics #steakhouse {
+    background: url("../img/steakhouse.jpg") no-repeat; }
+  .cuisines-pics #seafood {
+    background: url("../img/seafood.png") no-repeat; }
+  .cuisines-pics #sushi {
+    background: url("../img/sushi.jpg") no-repeat; }
+  .cuisines-pics #mexican {
+    background: url("../img/mexican.jpg") no-repeat; }
+  .cuisines-pics #chinese {
+    background: url("../img/chinese.jpg") no-repeat; }
+  .cuisines-pics #pizza {
+    background: url("../img/pizza.jpg") no-repeat; }
+  .cuisines-pics #american {
+    background: url("../img/american.jpg") no-repeat; }
+  .cuisines-pics .quantity {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-shadow: 0 1px 40px rgba(1, 1, 1, 0.55); }
+  .cuisines-pics .country {
+    position: relative;
+    top: 40px;
+    font-family: Lato, serif;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    transform: scaleX(1.0019);
+    text-shadow: 0 1px 40px rgba(1, 1, 1, 0.55); }
+  .cuisines-pics .divider {
+    width: 100%;
+    height: 1px; }
+  .cuisines-pics .brag-reason {
+    float: left;
+    width: 320px; }
+    .cuisines-pics .brag-reason .brag-numbers {
+      font-family: Lato, Arial, serif;
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #000;
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 35px; }
+    .cuisines-pics .brag-reason .brag-items {
+      font-family: Lato, Arial, serif;
+      font-weight: 400;
+      font-size: 1.1em;
+      color: #000;
+      text-align: center; }
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  max-width: 1600px;
+  margin: 60px auto 0 auto;
+  height: 60px;
+  background-color: #fff;
+  display: block;
+  box-sizing: border-box; }
+  .footer .markup-by {
+    font-family: Lato, Arial, serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #888;
+    position: relative;
+    top: 55px; }
