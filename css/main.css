@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  #iphone {
+    width: 70vw; }
+  .carousel-inner .item .carousel-caption {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.1em; }
+  .carousel-inner .item .feedback-sign {
+    font-size: 0.8em; } }
+
 html,
 body {
   margin: 0;
