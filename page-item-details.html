@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]>-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]>-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]>-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Карточка товара</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="libs/bootstrap.min.css">
+	<link rel="stylesheet" href="js/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<script src="slider-ui/jquery-ui.js"></script>
+	<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<div class="container-main">
+		<header>
+			<div class="container-fluid summit">
+				<div class="row top-row">
+					<div class="head-group-1 col-md-4 col-sm-6">
+						<a href="#"><img src="img/it-mix-logo.png" class="logo" alt="logo"></a>
+						<a class="shop-descr" href="#">Печатающая техника для бизнеса</a>
+					</div>
+					<div class="head-pillow col-md-4 col-sm-6"></div>
+					<div class="head-group-2 col-md-4">
+						<span class="phone&hours">
+							<span class="phone">+7 499 653-82-93</span>
+							<br>
+							<span class="work-time">Пн-Пт: 9.00&ndash;18.00</span>
+						</span>
+						<a href="#callme" class="button fancybox">заказать звонок</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid navigation">
+				<div class="row navigation-row">
+					<nav>
+						<menu>
+							<li class="menu-li"><a href="#">главная страница</a></li>
+							<li class="menu-li"><a href="#">акции</a></li>
+							<li class="menu-li"><a href="#">сервис</a></li>
+							<li class="menu-li"><a href="#">доставка оплата</a></li>
+							<li class="menu-li"><a href="#">контактная информация</a></li>
+						</menu>
+						<a href="#" class="cart">
+							<i class="fa fa-shopping-basket"></i>
+							<p class="cart-text">В корзине <span class="blue">60 товаров</span> на <span class="pink">60000 руб.</span></p>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="category-main container-fluid">
+			
+				<aside class="side-menu sidebar col-md-2">
+					<h3 class="sidebar-head"><a href="#">Каталог товаров</a></h3>
+					<div id="accordion">
+						<h3>Принтеры этикеток</h3>
+						<div>
+							<ul>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+						</div>
+						<h3>Принтеры чеков</h3>
+						<div class="active">
+							<ul>
+								<li><a href="#">Мобильные</a></li>
+								<li><a href="#">Настольные</a></li>
+								<li><a href="#">Промышленные</a></li>
+							</ul>
+						</div>
+						<h3>Принтеры для стикеров</h3>
+						<div>
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+						</div>
+						<h3>Принтеры штрих-кодов</h3>
+						<div>
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+						</div>
+						<h3>Принтеры для наклеек</h3>
+						<div>
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="tags-cloud">
+						<p class="tag-1">Мобильный</p>
+						<p class="tag-2">Струйный</p>
+						<p class="tag-3">Принтер</p>
+						<p class="tag-4">Промышленный</p>
+						<p class="tag-5">Лазерный</p>
+						<p class="tag-6">Печать</p>
+						<p class="tag-7">Штрих-коды</p>
+						<p class="tag-8">Настольный</p>
+						<p class="tag-9">Принтеры наклеек</p>
+					</div>
+				</aside>
+				<div class="category-content row">
+					<div class="category-content-top">
+						<div class="item-det-shop-window col-md-6 container">
+							<h3 class="shop-window-name">Мобильный принтер чеков B-EP4DL</h3>
+							<div class="item-det-curr-item-big">
+								<img src="img/toshiba-big.jpg" alt="">
+							</div>
+							<div class="item-det-shop-window-items row">
+								<div class="item-det-shop-window-item active">
+								<img src="img/toshiba-small-1.jpg" alt="">
+								</div>
+								<div class="item-det-shop-window-item">
+								<img src="img/toshiba-small-2.jpg" alt="">
+								</div>
+								<div class="item-det-shop-window-item">
+								<img src="img/toshiba-small-3.jpg" alt="">
+								</div>
+								
+							</div>
+						</div>
+						
+					<div class="item-details col-md-4">
+					<p class="instock"><i class="fa fa-check-circle" aria-hidden="true"></i>Есть в наличии</p>
+					<br>
+						<p class="details-text">
+							Принципиальным отличием нового мобильного принтера Toshiba B-EP4DL от выпускаемых на сегодняшний день конкурирующих моделей является их повышенная защищенность от внешних воздействий. Toshiba B - EP4DL уверенно выдерживает падение с высоты 1,5 м! Вместе с тем, повышенная защищенность не отразилась на весе принтера. Термопринтер B-EP4DL "узкий" и весит всего 820 г, включая вес аккумуляторов!
+						</p>
+						<h4 class="item-params-head">Основные характеристики:</h4>
+						
+						<div class="parameters">
+							<div class="param method">
+								<span class="param-name">Метод печати</span>
+								<span class="dots"></span>
+								<span class="index">прямая термопечать</span>
+							</div>
+							<div class="param print-speed">
+								<span class="param-name">Скорость печати</span>
+								<span class="dots"></span>
+								<span class="index">до 102 мм/сек</span>
+							</div>
+							<div class="param width">
+								<span class="param-name">Ширина печати</span>
+								<span class="dots"></span>
+								<span class="index">до 115 мм</span>
+							</div>
+							<div class="param length">
+								<span class="param-name">Длина печати</span>
+								<span class="dots"></span>
+								<span class="index">до 995 мм</span>
+							</div>
+							<div class="param quality">
+								<span class="param-name">Качество печати</span>
+								<span class="dots"></span>
+								<span class="index">203 dpi</span>
+							</div>
+							<div class="param dimensions">
+								<span class="param-name">Габариты</span>
+								<span class="dots"></span>
+								<span class="index">150 х 145 х 77 мм</span>
+							</div>
+							<div class="param weight">
+								<span class="param-name">Вес</span>
+								<span class="dots"></span>
+								<span class="index">0,82 кг</span>
+							</div>
+						</div>
+						
+						<p class="item-price"><span class="word-price">Цена: </span><span class="number-price"> 60 800 руб.</span></p>
+						<p class="delivery">Доставка: 280 руб. 1-2 дня</p>
+						<p class="pickup">Самовывоз: бесплатно</p>
+						
+						<button class="to-cart-button">В корзину</button>
+						
+					</div>
+				</div>
+				
+			<div class="tabbed-details dtabs">
+				<ul class="tabs__caption">
+					<li class="active">ХАРАКТЕРИСТИКИ</li>
+					<li>АКСЕССУАРЫ</li>
+					<li>РАСХОДНЫЕ МАТЕРИАЛЫ</li>
+					<li>ПЕРИОДИЧЕСКОЕ&nbsp;ОБСЛУЖИВАНИЕ</li>
+				</ul>
+				<div id="det-params" class="tabs__content active">
+					<div class="base-print-params active">
+					<div class="base-params">
+						<h4>Основные характеристики</h4>
+						<div class="param manufacturer">
+							<span class="param-name">Производитель</span>
+							<span class="dots"></span>
+							<span class="index">Samsung</span>
+						</div>
+						<div class="param device-type">
+							<span class="param-name">Устройство</span>
+							<span class="dots"></span>
+							<span class="index">принтер</span>
+						</div>
+						<div class="param format">
+							<span class="param-name">Формат</span>
+							<span class="dots"></span>
+							<span class="index">А4</span>
+						</div>
+						<div class="param print-type">
+							<span class="param-name">Тип</span>
+							<span class="dots"></span>
+							<span class="index">лазерный</span>
+						</div>
+						<div class="param purpose">
+							<span class="param-name">Назначение</span>
+							<span class="dots"></span>
+							<span class="index">документы</span>
+						</div>
+					</div>
+					<div class="print-params">
+						<h4>Характеристики печати</h4>
+							<div class="param print-type">
+								<span class="param-name">Тип печати</span>
+								<span class="dots"></span>
+								<span class="index">монохромная</span>
+							</div>
+							<div class="param print-tech">
+								<span class="param-name">Технология печати</span>
+								<span class="dots"></span>
+								<span class="index">лазерная</span>
+							</div>
+							<div class="param print-speed">
+								<span class="param-name">Скорость печати</span>
+								<span class="dots"></span>
+								<span class="index">40 стр/мин</span>
+							</div>
+							<div class="param print-def">
+								<span class="param-name">Разрешение печати</span>
+								<span class="dots"></span>
+								<span class="index">1200 х 1200 dpi</span>
+							</div>
+							<div class="param colors">
+								<span class="param-name">Количество цветов</span>
+								<span class="dots"></span>
+								<span class="index">1</span>
+							</div>
+					</div>
+					</div>
+					<div class="rest-params">
+					<div class="add-params">
+						<h4>Дополнительные характеристики</h4>
+						<div class="param memory">
+							<span class="param-name">Объем памяти</span>
+							<span class="dots"></span>
+							<span class="index">256 МБ (макс. 512 МБ)</span>
+						</div>
+						<div class="param hdd">
+							<span class="param-name">Жесткий диск</span>
+							<span class="dots"></span>
+							<span class="index">нет</span>
+						</div>
+						<div class="param exhaust">
+							<span class="param-name">Максимальная нагрузка</span>
+							<span class="dots"></span>
+							<span class="index">100 000 стр/мес</span>
+						</div>
+						<div class="param features">
+							<span class="param-name">Особенности</span>
+							<span class="dots"></span>
+							<span class="index">эмуляция PCL5e, PCL6</span>
+						</div>
+						<div class="param paper-density">
+							<span class="param-name">Плотность бумаги</span>
+							<span class="dots"></span>
+							<span class="index">60-220 г/кв.м</span>
+						</div>
+						<div class="param ps-support">
+							<span class="param-name">Поддержка PostScript 3</span>
+							<span class="dots"></span>
+							<span class="index">да</span>
+						</div>
+						<div class="param dual-side">
+							<span class="param-name">Двусторонняя печать</span>
+							<span class="dots"></span>
+							<span class="index">да</span>
+						</div>
+						<div class="param usb">
+							<span class="param-name">Интерфейс USB</span>
+							<span class="dots"></span>
+							<span class="index">да</span>
+						</div>
+						<div class="param ethernet">
+							<span class="param-name">Интерфейс Ethernet</span>
+							<span class="dots"></span>
+							<span class="index">да</span>
+						</div>
+						<div class="param wifi">
+							<span class="param-name">Интерфейс Wi-Fi</span>
+							<span class="dots"></span>
+							<span class="index">нет</span>
+						</div>
+						<div class="param interface">
+							<span class="param-name">Интерфейс</span>
+							<span class="dots"></span>
+							<span class="index">USB 2.0, Ethernet</span>
+						</div>
+						<div class="param consumption">
+							<span class="param-name">Потребляемая мощность</span>
+							<span class="dots"></span>
+							<span class="index">700 Вт</span>
+						</div>
+						<div class="param noise">
+							<span class="param-name">Уровень шума</span>
+							<span class="dots"></span>
+							<span class="index">57 дБ</span>
+						</div>
+					</div>
+					<div class="complect">
+						<h4>Габариты, вес, комплектация</h4>
+						<div class="param dimensions">
+							<span class="param-name">Габариты</span>
+							<span class="dots"></span>
+							<span class="index">366 х 365,6 х 262,5 мм</span>
+						</div>
+						<div class="param weight">
+							<span class="param-name">Вес</span>
+							<span class="dots"></span>
+							<span class="index">10,18 кг</span>
+						</div>
+						<div class="param warranty">
+							<span class="param-name">Официальная гарантия</span>
+							<span class="dots"></span>
+							<span class="index">1 год</span>
+						</div>
+					</div>
+				</div>
+				</div>
+			
+				<div id="accessories" class="tabs__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias saepe minima, hic veniam nesciunt reiciendis aut ex culpa expedita labore tempora dolorem natus beatae quam laboriosam recusandae doloribus qui modi accusamus quia. Id, sapiente possimus suscipit, nemo fugit non quasi quod iste, accusantium ullam qui quas officiis nesciunt impedit voluptatum!</div>
+				<div id="expendables" class="tabs__content">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большой рыбного коварных путь букв пунктуация маленькая, свое снова предложения снова если, предупреждал ее встретил послушавшись лучше. Пояс переписали запятых возвращайся текста одна, которой рукописи, он все не над своих правилами она инициал использовало. Великий ведущими пустился инициал первую рекламных ее возвращайся правилами пунктуация сбить своих рукописи послушавшись, но, всемогущая. Это, инициал, дорогу оксмокс, языком великий подзаголовок запятой ему рекламных свое текстов единственное приставка проектах, лучше своего свою за назад!</div>
+				<div id="maintain" class="tabs__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae animi quia, molestiae rem illum ullam facilis impedit quis quam incidunt laboriosam. Quo voluptates, facilis, fuga quibusdam perspiciatis temporibus impedit sapiente ex consequuntur nam corrupti excepturi a ab, id in reiciendis amet iste enim obcaecati harum odio quae beatae. Blanditiis error mollitia assumenda hic. Autem cumque vel perspiciatis culpa commodi quibusdam.</div>
+			</div>
+			
+			<div id="free-consult" class="form-consult-wrap">
+				<form action="" class="form-consult">
+					<h3>Закажите бесплатную консультацию</h3>
+					<span>Как Вас зовут:</span>
+					<input type="text" required>
+					<span>Контактный телефон:</span>
+					<input type="tel" required>
+					<small><input type="checkbox" required>
+					Согласен на обработку персональных данных</small>
+					<button href="#modal-accept" type="submit" class="form-consult-btn fancybox">ОТПРАВИТЬ ЗАЯВКУ</button>
+				</form>
+			</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="footer-inner">
+			<p class="copyright">2016 &copy; "IT Mix". <br>Все права защищены</p>
+			<p class="footer-contact">Контактный телефон: +7 499 653 82 93 <br>Адрес: 125130, Москва, ул. Зои и Александра Космодемьянских, д.30/32, корп. 1 <br>Электронная почта: <a href="mailto:itmix@itmix.su">itmix@itmix.su</a></p>
+		</div>
+	</footer>
+
+	<div class="hidden">
+		<div id="callme" class="modal-form">
+			<p class="h3-like">Заказать обратный звонок</p>
+			<p>Консультация с сотрудником отдела продаж или сервисной службы займет меньше времени, чем самостоятельный поиск!</p>
+			<p>Введите номер телефона:</p>
+			<form action="" class="popup-form">
+				<input type="tel" placeholder="+7(___)___-__-__" required>
+				<button href="#modal-accept" id="callme-submit" class="button fancybox" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
+			</form>
+		</div>
+		
+		
+		<div id="modal-accept" class="modal-accept">
+			<img src="img/checkmark_big.png" width="75px" alt="checkmark">
+			<p class="h3-like">Заявка отправлена</p>
+			<p>Спасибо! Наши менеджеры в ближайшее<br>время свяжутся с Вами.</p>			
+		</div>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
