@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	
 // Смена класса Active по нажатию
-	$('.shop-window, .item-det-shop-window').on('click', '.shop-window-item, .item-det-shop-window-item', function() {
-		$('.shop-window-item, .item-det-shop-window-item').removeClass('active');
-		$(this).addClass('active');
-	});
+//	$('.shop-window').on('click', '.shop-window-item', function() {
+//		$('.shop-window-item').removeClass('active');
+//		$(this).addClass('active');
+//	});
 	
 	$('.categories').on('click', '.category', function() {
 		$('.category').removeClass('active');
@@ -64,6 +64,18 @@ $(function() {
 
 });
 
+//  Запускаем переключение вида в витрине по нажатию на миниатюры
+	
+	$(function() {
 
+  $('ul.tabs__caption, .item-det-shop-window, .shop-window').on('click', 'li:not(.active), .item-det-shop-window-item:not(.active), .shop-window-item:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.dtabs, .item-det-shop-window, .shop-window').find('div.tabs__content, .item-det-curr-item-big, .curr-item-big').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
+});
+	
+	
 
 });

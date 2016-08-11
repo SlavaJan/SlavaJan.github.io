@@ -659,3 +659,11 @@ footer {
     margin-top: 20px; }
   .modal-accept .h3-like {
     font-size: 1.8rem; }
+
+.item-det-curr-item-big,
+.curr-item-big {
+  display: none; }
+
+.item-det-curr-item-big.active,
+.curr-item-big.active {
+  display: block; }
