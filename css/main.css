@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 360px;
+    width: 340px;
     text-align: right;
     margin-top: 10px; }
     .top-row .head-group-2 .phone {
@@ -153,7 +153,6 @@
     .category-main aside .tags-cloud {
       width: 100%;
       font-size: 1.4rem;
-      color: #9f9f9f;
       margin-top: 40px; }
       .category-main aside .tags-cloud .tag-1,
       .category-main aside .tags-cloud .tag-5,
@@ -178,6 +177,11 @@
         font-size: 1.6rem;
         float: left;
         margin-right: 1px; }
+      .category-main aside .tags-cloud a {
+        text-decoration: none;
+        color: #9f9f9f; }
+        .category-main aside .tags-cloud a:hover {
+          text-decoration: underline; }
   .category-main .shop-window {
     width: 410px; }
     .category-main .shop-window .shop-window-name {
