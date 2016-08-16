@@ -774,7 +774,7 @@ button.ui-button::-moz-focus-inner {
 	display: block;
 	border: 0;
 	background-position: 0 0;
-	background: url("../../img/ui-bg_diagonals-thick_15_0b3e6f_40x40.png");
+	background: gray;
 }
 
 /* support: IE8 - See #6727 */
