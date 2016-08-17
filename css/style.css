@@ -1,0 +1,503 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+    url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+	width: 100%;
+	font-family: "RobotoRegular";
+}
+html {
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background: #33aaff;
+	color: #fff;
+}
+
+ @media(min-width:767px) {
+ .navbar {
+/*padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;*/
+    }
+ .top-nav-collapse {
+        /* Customize the look and feel of the collapsed top nav here */
+        padding: 0;
+}
+}
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+a {
+	color:#0371be;
+}
+a:hover {
+	color:#064977;
+}
+p {
+	margin: 0 0 10px;
+	font-size: 14px;
+	line-height:24px;
+	font-family: sans-serif;
+	color:#818181;
+}
+
+/******Navigation CSS******/
+.navbar-default .navbar-brand {
+	color: #fac922;
+	font-family: 'Roboto Slab', serif;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #fac922;
+	background-color: transparent;
+}
+.navbar-default {
+	background-color: #064977;
+	border-color: #064977;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #1488da;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #fac922;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #fac922;
+	background-color: #043d65;
+}
+.navbar-toggle {
+position: relative;
+float: right;
+margin-right: 15px;
+padding: 9px 10px;
+margin-top: 8px;
+margin-bottom: 8px;
+background-color: #ffd852;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+.navbar-default .navbar-toggle {
+border-color: #ffd852;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #ffd74d;
+}
+
+/**** Intro section CSS*****/
+.intro-section {
+	min-height:900px;
+	padding-top: 150px;
+	background: url(../images/big_image.jpg) no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+.intro-section h1 {
+	color:#0371be;
+	font-weight:600;
+	font-size:42px;
+	letter-spacing:-2px;
+	margin-bottom:10px;
+}
+
+.h2-like {
+	color:#0371be;
+	font-weight:600;
+	font-size:28px;
+	letter-spacing:-2px;
+	margin-bottom:30px;
+}
+.intro-section p {
+	color:#333;
+	font-size:1.6em;
+	margin-bottom:40px;
+	font-family: "RobotoRegular";
+}
+
+.intro-section ul {
+	margin-left: -20px;
+	margin-bottom: 40px;
+	max-width: 38em;
+	float: none;
+}
+
+.intro-section ul li{	
+	list-style: none;
+	font-size: 1.3em;
+	background: url(../images/lotus-icon.svg) no-repeat;
+	padding-left: 55px;
+	margin-bottom: 10px;
+}
+
+.intro-section .btn-one {
+	font-size: 16px;
+}
+
+
+/*** Common Section***/
+#feature, #classes, #pricing, #teacher, #member, #client, #signup{ overflow:hidden;}
+.feature-section, .classes-section, .teacher-section, .pricing-section, .member-section, .testimonial-section {
+	padding-top:120px;
+	padding-bottom:120px;
+}
+.section-colored {
+	background: #e8eef2;
+}
+.section-heading {
+	padding-bottom:60px;
+	text-align:center;
+}
+.section-heading h1 {
+	font-size:30px;
+	letter-spacing:-1px;
+	font-weight:600;
+}
+.feature-section .col-md-4 {
+	margin-bottom:60px;
+}
+.feature-section .col-md-4 i {
+	color:#0371be;
+}
+
+
+/*** Button Section****/
+.cta-section {
+	background-color:#e8eef2;
+	padding-bottom:20px;
+	padding-top:20px;
+	border-radius: 4px;
+}
+.cta-section h4 {
+	font-size:28px;
+	font-weight:bold;
+	color:#0371be;
+	padding-bottom:20px;
+}
+.btn-yellow-hero {
+	background-color:#fac922;
+	border:none;
+	padding:12px 80px;
+	font-family: 'Roboto Slab', serif;
+	font-size:18px;
+	font-weight:600;
+	-webkit-font-smoothing: antialiased;
+	text-transform:uppercase;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-yellow-hero:hover {
+	background-color:#064977;
+	border:none;
+	padding:12px 80px;
+	color:#fff;
+	font-family: 'Roboto Slab', serif;
+	font-weight:600;
+	-webkit-font-smoothing: antialiased;
+}
+.btn-yellow {
+	background-color:#fac922;
+	border:none;
+	padding:12px 30px;
+	font-family: 'Roboto Slab', serif;
+	-webkit-font-smoothing: antialiased;
+	text-transform:uppercase;
+	font-weight: bold;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-yellow:hover {
+	background-color:#064977;
+	border:none;
+	padding:12px 30px;
+	font-family: 'Roboto Slab', serif;
+	-webkit-font-smoothing: antialiased;
+	color:#fff;
+	font-weight: bold;
+}
+.btn-green-dark {
+	background-color:#2c533d;
+	border:none;
+	color:#fff;
+	padding:12px 30px;
+	font-family: 'Roboto Slab', serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-green {
+	background-color:#0371be;
+	border:none;
+	font-family: 'Roboto Slab', serif;
+	-webkit-font-smoothing: antialiased;
+	text-transform:uppercase;
+	padding: 12px 30px;
+	font-weight: bold;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s; color:#FFFFFF;
+}
+.btn-green:hover {
+	background-color:#064977;
+	border:none;
+	font-family: 'Roboto Slab', serif;
+	-webkit-font-smoothing: antialiased;
+	text-transform:uppercase;
+	padding: 12px 30px;
+	font-weight: bold;
+	color:#fff;
+}
+
+/**** Teacher Section*****/
+
+.teacher-section h4 {
+	margin-top:30px;
+}
+.teacher-section i {
+	color:#8b858f;
+	font-size: 36px;
+}
+.teacher-section i:hover {
+	color:#0371be;
+}
+.teacher-section img {
+	opacity:0.8;
+	width: 450px;
+}
+.teacher-section img:hover {
+	opacity:1;
+	cursor:pointer;
+}
+
+.teacher-section p {
+	font-size: 18px;
+	text-align: justify;
+}
+
+/**** Yoga benefits Section ****/
+
+.benefits {
+	padding: 80px 0 200px 0;
+}
+
+.benefits img {
+	max-width: 100%;
+}
+
+.benefits ul {
+	margin-left: -20px;
+	margin-bottom: 40px;
+	max-width: 38em;
+}
+
+.benefits ul li {
+	list-style: none;
+	font-size: 1.3em;
+	background: url(../images/lotus-icon.svg) no-repeat;
+	padding-left: 55px;
+	margin-bottom: 10px;
+	color:#8b858f;
+}
+
+/****** Pricing Section*******/
+
+.pricing-section {
+	background: url(../images/yoga-river.jpg) no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+.pricing {
+	border:none;
+	padding: 20px 0 40px 0px;
+	text-align:center;
+	color:#8b858f;
+	font-size: 18px;
+	opacity: 0.9;
+}
+
+.pricing .panel-body {
+	
+}
+
+.price {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.pricing-section h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.pricing ul {
+	margin:0px;
+	padding:0 0 60px 0px;
+}
+.pricing ul li {
+	list-style:none;
+	line-height:30px;
+}
+.pricing-main {
+	background-color:#ffd852;
+	border:none;
+	padding: 30px 0px;
+	text-align:center;
+	opacity: 0.9;
+	min-height: 300px;
+}
+
+.pricing-main input {
+	width: 70%;
+	height: 3.5em;
+	margin-bottom: 25px;
+	padding-left: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	border:none;
+	border-radius: 2px;
+}
+
+.pricing-main input:focus {
+	outline-color: #FAC922;
+}
+
+/**** Testimonial*****/
+.testimonial {
+/*	background: #e8eef2;*/
+	margin-bottom: 30px;
+}
+.testimonial-section p {
+	font-size: 18px;
+	line-height: 25px;
+	font-style:italic;
+}
+
+.testimonial-section img {
+	width: 200px;
+}
+
+/**** Sign up Section****/
+.signup {
+	background-color:#0371be;
+	background-image:url(../images/ptn-standing.png);
+	background-repeat:repeat-x;
+	height:394px;
+	width:100%;
+	color:#fff;
+	padding-top:80px;
+}
+.signup h2 {
+	font-weight:600;
+	letter-spacing:-1px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup p {
+	color:#fff;
+	padding-bottom:30px;
+}
+.signup .input-lg {
+	border:none;
+	border-radius: 2px;
+	padding-left: 10px;
+}
+
+/*** Classes Section****/
+.classes_box {
+	background-color:#fff;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	padding: 40px 20px;
+	text-align:center;
+}
+.classes_box img {
+	margin-bottom:30px;
+}
+.classes_box p, .member-section p {
+	padding-bottom:30px;
+}
+/**** Footer Section****/
+.footer {
+	background-color:#272528;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+/****** media query start******/
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 360px) {
+	.intro-section {
+		background-size:auto;
+		background-position: top center;
+	}
+}
+
+@media(max-width:760px){
+.feature-section, .classes-section, .teacher-section, .pricing-section, .member-section, .testimonial-section, .benefits {
+padding-top: 80px;
+padding-bottom: 80px;
+}
+.feature-section .col-md-4 {
+margin-bottom: 30px;
+}
+.classes_box {
+	margin-bottom:20px;
+}	
+.teacher-section .col-md-3{ margin-bottom:20px;}
+.signup .input-lg {
+border: none;
+border-radius: 2px;
+margin-bottom: 10px;
+}
+	
+.testimonial img {
+	display: none;
+}
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+.errors{
+	border:2px solid #f00 !important;
+}
