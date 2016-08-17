@@ -471,9 +471,13 @@ background-color: #ffd74d;
 		background-size:auto;
 		background-position: top center;
 	}
+	
+	.testimonial img {
+		display: none;
+	}
 }
 
-@media(max-width:760px){
+@media(max-width:768px){
 .feature-section, .classes-section, .teacher-section, .pricing-section, .member-section, .testimonial-section, .benefits {
 padding-top: 80px;
 padding-bottom: 80px;
@@ -493,7 +497,7 @@ margin-bottom: 10px;
 	
 .testimonial img {
 	display: none;
-}
+
 }
 @media(min-width:768px){}
 @media(min-width:992px){}
