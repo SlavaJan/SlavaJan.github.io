@@ -15,7 +15,7 @@
 <!-- Custom CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <!-- Fonts CSS -->
-<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 </head>
 
 <!--Fancybox-->
@@ -36,11 +36,11 @@
       <ul class="nav navbar-nav">
         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
         <li class="hidden"> </li>
-        <li class="page-scroll"> <a href="index.html#feature">Этот курс</a> </li>
-        <li class="page-scroll"> <a href="index.html#teacher">Тренер</a> </li>
-        <li class="page-scroll"> <a href="index.html#benefits">Результаты</a> </li>
-        <li class="page-scroll"> <a href="index.html#pricing">Запись</a> </li>
-        <li class="page-scroll"> <a href="index.html#">1-800-123-4567</a> </li>
+        <li class="page-scroll"><a href="index.html#feature">Этот курс</a></li>
+        <li class="page-scroll"><a href="index.html#teacher">Тренер</a></li>
+        <li class="page-scroll"><a href="index.html#benefits">Результаты</a></li>
+        <li class="page-scroll"><a href="index.html#pricing">Запись</a></li>
+        <li class="page-scroll"><a href="index.html#">8 (916) 165-24-99</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -125,7 +125,7 @@
       </div>
       <div class="col-md-6 teacher-descr">
         <h4>ФИЛИПП ИВАНОВ</h4>
-        <p>На регулярной основе начал изучать хатха-йогу в 2002 году. В 2003 - 2007 занимался в московском Институте Йоги Патанджали. Регулярно посещаю международные семинары. С разрешения основателя стиля Шандора Ремете преподаю Йогу теней. Начало преподавательской деятельности приходится на 2009 год.</p>
+        <p>На регулярной основе начал изучать хатха-йогу в 2002 году. В 2003 &ndash; 2007 занимался в московском Институте Йоги Патанджали. Регулярно посещаю международные семинары. С разрешения основателя стиля Шандора Ремете преподаю Йогу теней. Начало преподавательской деятельности приходится на 2009 год.</p>
         <a href="https://www.facebook.com/YOUandFloor"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="index.html#"><i class="fa fa-youtube-square fa-2x"></i></a>
       </div>
     </div>
@@ -257,13 +257,15 @@
       </div>
     </div>
     <div class="row">
+     <form id="register">
       <div class="col-md-4 col-md-offset-1">
-        <input type="text" id="txt_name2" placeholder="Ваше имя" class="form-control input-lg">
+        <input type="text" form="register" id="txt_name2" placeholder="Ваше имя" class="form-control input-lg" required>
       </div>
       <div class="col-md-4">
-        <input type="text" id="txt_email2" placeholder="Телефон" class="form-control input-lg">
+        <input type="text" form="register" id="txt_email2" placeholder="Телефон" class="form-control input-lg" required>
       </div>
-      <div class="col-md-2"> <a href="javascript:void(0);" class="btn btn-default btn-block btn-yellow" onclick="mail_send('bottom_news','2')">Записаться</a> </div>
+      <div class="col-md-2"> <a href="javascript:void(0);" form="register" class="btn btn-default btn-block btn-yellow" onclick="mail_send('bottom_news','2')">Записаться</a> </div>
+     </form>
     </div>
     <div id="mail_msg2" class="col-md-10 col-md-offset-1"></div>
   </div>
@@ -272,7 +274,7 @@
 <!--footer section start-->
 <div class="footer">
   <div class="container text-center">
-    <p>2016 &copy;</p>
+    <p>2016 &copy; YOU and Floor</p>
   </div>
 </div>
 <!--footer section close--> 
