@@ -39,37 +39,6 @@
     font-weight: normal;
 }
 
-/* font-family: "RobotoSlabRegular"; */
-@font-face {
-    font-family: "RobotoSlabRegular";
-    src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot");
-    src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoSlabRegular/RobotoSlabRegular.woff") format("woff"),
-    url("../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoSlabLight"; */
-@font-face {
-    font-family: "RobotoSlabLight";
-    src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot");
-    src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoSlabLight/RobotoSlabLight.woff") format("woff"),
-    url("../fonts/RobotoSlabLight/RobotoSlabLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoSlabBold"; */
-@font-face {
-    font-family: "RobotoSlabBold";
-    src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot");
-    src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"),
-    url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 body {
 	width: 100%;
 	font-family: "RobotoRegular";
@@ -117,30 +86,21 @@ p {
 .navbar-default .navbar-brand {
 	color: #fac922;
 	font-family: 'Roboto Slab', serif;
-	font-weight: 500;
-	font-size: 24px;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: #fac922;
 	background-color: transparent;
 }
 .navbar-default {
-/*
 	background-color: #064977;
 	border-color: #064977;
-*/
-	
-	background: url(../images/floor.jpg) no-repeat;
-	background-size: cover;
 }
 .navbar-default .navbar-nav>li>a {
 	color: #1488da;
-	font-weight: 700;
-	font-size: 16px;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #fac922;
-	background-color: #064977;
+	background-color: transparent;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	color: #fac922;
@@ -457,11 +417,10 @@ background-color: #ffd74d;
 
 /**** Sign up Section****/
 .signup {
-/*	background-color:#0371be;*/
-	background-image:url(../images/floor.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	height:324px;
+	background-color:#0371be;
+	background-image:url(../images/ptn-standing.png);
+	background-repeat:repeat-x;
+	height:394px;
 	width:100%;
 	color:#fff;
 	padding-top:80px;
@@ -471,7 +430,6 @@ background-color: #ffd74d;
 	letter-spacing:-1px;
 	margin-bottom: 30px;
 	text-align: center;
-	color: #0371be;
 }
 .signup p {
 	color:#fff;
