@@ -1,44 +1,3 @@
-/* font-family: "RobotoRegular"; */
-@font-face {
-    font-family: "RobotoRegular";
-    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoLight"; */
-@font-face {
-    font-family: "RobotoLight";
-    src: url("../fonts/RobotoLight/RobotoLight.eot");
-    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
-    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoMedium"; */
-@font-face {
-    font-family: "RobotoMedium";
-    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
-    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
-    url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoBold"; */
-@font-face {
-    font-family: "RobotoBold";
-    src: url("../fonts/RobotoBold/RobotoBold.eot");
-    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
-    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 /* font-family: "RobotoSlabRegular"; */
 @font-face {
     font-family: "RobotoSlabRegular";
@@ -49,38 +8,18 @@
     font-style: normal;
     font-weight: normal;
 }
-/* font-family: "RobotoSlabLight"; */
-@font-face {
-    font-family: "RobotoSlabLight";
-    src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot");
-    src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoSlabLight/RobotoSlabLight.woff") format("woff"),
-    url("../fonts/RobotoSlabLight/RobotoSlabLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoSlabBold"; */
-@font-face {
-    font-family: "RobotoSlabBold";
-    src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot");
-    src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"),
-    url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
 
 body {
 	width: 100%;
-	font-family: "RobotoRegular";
+	font-family: "RobotoSlabRegular";
 }
 html {
 	width: 100%;
 	-webkit-font-smoothing: antialiased;
 }
 
-::selection {
-	background: #33aaff;
+::selection{
+	background: #0371be;
 	color: #fff;
 }
 
@@ -93,12 +32,11 @@ html {
     }
  .top-nav-collapse {
         /* Customize the look and feel of the collapsed top nav here */
+	    max-width: 100%;
         padding: 0;
 }
 }
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
+
 a {
 	color:#0371be;
 }
@@ -109,8 +47,10 @@ p {
 	margin: 0 0 10px;
 	font-size: 14px;
 	line-height:24px;
-	font-family: sans-serif;
+	font-family: "RobotoSlabRegular";
 	color:#818181;
+	padding-left: 13px;
+    padding-right: 13px;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -187,7 +127,7 @@ background-color: #ffd74d;
 	color:#333;
 	font-size:1.6em;
 	margin-bottom:40px;
-	font-family: "RobotoRegular";
+	font-family: "RobotoSlabRegular";
 }
 
 .intro-section ul {
@@ -209,6 +149,14 @@ background-color: #ffd74d;
 	font-size: 16px;
 }
 
+/*
+*  Почему этот курс?
+*/
+
+.feature-section p {
+	font-family: sans-serif;
+	padding: 0;
+}
 
 /*** Common Section***/
 #feature, #classes, #pricing, #teacher, #member, #client, #signup{ overflow:hidden;}
@@ -335,17 +283,13 @@ background-color: #ffd74d;
 	color:#0371be;
 }
 .teacher-section img {
-	opacity:0.8;
-	width: 450px;
-}
-.teacher-section img:hover {
-	opacity:1;
-	cursor:pointer;
+	max-width: 450px;
 }
 
 .teacher-section p {
 	font-size: 18px;
 	text-align: justify;
+	padding: 0;
 }
 
 /**** Yoga benefits Section ****/
@@ -437,17 +381,26 @@ background-color: #ffd74d;
 
 /**** Testimonial*****/
 .testimonial {
-/*	background: #e8eef2;*/
 	margin-bottom: 30px;
 }
 .testimonial-section p {
 	font-size: 18px;
 	line-height: 25px;
-	font-style:italic;
+	font-style: italic;
 }
 
 .testimonial-section img {
 	width: 200px;
+	border: 8px solid silver;
+}
+
+.testimonial span {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.testimonial-2 .row .testimonial-img {
+	padding-left: 30px;
 }
 
 /**** Sign up Section****/
