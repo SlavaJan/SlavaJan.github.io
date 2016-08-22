@@ -283,7 +283,7 @@ background-color: #ffd74d;
 	color:#0371be;
 }
 .teacher-section img {
-	max-width: 450px;
+	max-width: 100%;
 }
 
 .teacher-section p {
