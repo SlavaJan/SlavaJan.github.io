@@ -76,7 +76,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 .navbar-nav .phone {
 	color: #fac922;
-	line-height: 50px;
+	padding: 15px 10px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -117,7 +117,7 @@ background-color: #ffd74d;
 .intro-section h1 {
 	color:#0371be;
 	font-weight:600;
-	font-size:42px;
+	font-size:38px;
 	letter-spacing:-2px;
 	margin-bottom:10px;
 }
@@ -125,13 +125,13 @@ background-color: #ffd74d;
 .h2-like {
 	color:#0371be;
 	font-weight:600;
-	font-size:28px;
+	font-size:24px;
 	letter-spacing:-2px;
 	margin-bottom:30px;
 }
 .intro-section p {
 	color:#333;
-	font-size:1.6em;
+	font-size:1.4em;
 	margin-bottom:40px;
 	font-family: sans-serif;
 }
@@ -145,14 +145,14 @@ background-color: #ffd74d;
 
 .intro-section ul li{	
 	list-style: none;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	background: url(../images/lotus-icon.svg) no-repeat;
 	padding-left: 55px;
 	margin-bottom: 10px;
 }
 
 .intro-section .btn-one {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 /*
@@ -184,6 +184,7 @@ background-color: #ffd74d;
 }
 .feature-section .col-md-4 {
 	margin-bottom:60px;
+	text-align: justify;
 }
 .feature-section .col-md-4 i {
 	color:#0371be;
@@ -293,7 +294,7 @@ background-color: #ffd74d;
 }
 
 .teacher-section p {
-	font-size: 18px;
+	font-size: 16px;
 	text-align: justify;
 	padding: 0;
 }
@@ -306,6 +307,7 @@ background-color: #ffd74d;
 
 .benefits img {
 	max-width: 100%;
+	margin-bottom: 25px;
 }
 
 .benefits ul {
@@ -388,9 +390,10 @@ background-color: #ffd74d;
 /**** Testimonial*****/
 .testimonial {
 	margin-bottom: 30px;
+	max-width: 70%
 }
 .testimonial-section p {
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 25px;
 	font-style: italic;
 }
@@ -398,10 +401,11 @@ background-color: #ffd74d;
 .testimonial-section img {
 	width: 200px;
 	border: 8px solid silver;
+	margin-bottom: 25px;
 }
 
 .testimonial span {
-	font-size: 2rem;
+	font-size: 16px;
 	font-weight: bold;
 }
 
@@ -414,7 +418,7 @@ background-color: #ffd74d;
 	background-color:#0371be;
 	background-image:url(../images/ptn-standing.png);
 	background-repeat:repeat-x;
-	height:394px;
+	height:425px;
 	width:100%;
 	color:#fff;
 	padding-top:80px;
@@ -456,18 +460,16 @@ background-color: #ffd74d;
 	padding-bottom:30px;
 }
 /****** media query start******/
-@media (min-width: 768px) {
-
+@media (max-width: 320px) {
+	.signup {
+		padding-top: 40px;
+	}
 }
 
 @media (max-width: 360px) {
 	.intro-section {
 		background-size:auto;
 		background-position: top center;
-	}
-	
-	.testimonial img {
-		display: none;
 	}
 }
 
@@ -489,9 +491,10 @@ border-radius: 2px;
 margin-bottom: 10px;
 }
 	
-.testimonial img {
-	display: none;
+.testimonial {
+	max-width: 100%;
 
+}
 }
 @media(min-width:768px){}
 @media(min-width:992px){}
