@@ -203,6 +203,7 @@ background-color: #ffd74d;
 	font-weight:bold;
 	color:#0371be;
 	padding-bottom:20px;
+	text-align: center;
 }
 .btn-yellow-hero {
 	background-color:#fac922;
@@ -294,7 +295,7 @@ background-color: #ffd74d;
 }
 
 .teacher-section p {
-	font-size: 16px;
+	font-size: 14.5px;
 	text-align: justify;
 	padding: 0;
 }
@@ -318,7 +319,7 @@ background-color: #ffd74d;
 
 .benefits ul li {
 	list-style: none;
-	font-size: 1.3em;
+	font-size: 14px;
 	background: url(../images/lotus-icon.svg) no-repeat;
 	padding-left: 55px;
 	margin-bottom: 10px;
@@ -338,12 +339,7 @@ background-color: #ffd74d;
 	padding: 20px 0 40px 0px;
 	text-align:center;
 	color:#8b858f;
-	font-size: 18px;
 	opacity: 0.9;
-}
-
-.pricing .panel-body {
-	
 }
 
 .price {
@@ -362,6 +358,7 @@ background-color: #ffd74d;
 .pricing ul li {
 	list-style:none;
 	line-height:30px;
+	font-size: 14px;
 }
 .pricing-main {
 	background-color:#ffd852;
