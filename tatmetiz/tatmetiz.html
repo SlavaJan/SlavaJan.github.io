@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Татметиз</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/libs/font-awesome.min.css">
+  <link rel="stylesheet" href="/libs/slick/slick.css">
+  <link rel="stylesheet" href="/libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="/css/style.css">
+  </head>
+<body>
+  <!-- Modals start -->
+  <div class="modal fade change-city" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <form class="change-city-form form-group" method="get">
+          <h4 class="text-center">Выберите свой город</h4>
+            <label class="radio-inline"><input type="radio" class="city-input" name="city" value="Chelny">Набережные Челны</label>
+            <label class="radio-inline"><input type="radio" class="city-input" name="city" value="Kazan">Казань</label>
+            <div class="text-center">
+              <button type="submit" name="city" class="btn btn-primary">Выбрать</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade callback-order" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <form class="callback-order-form form-group" action="index.html" method="post">
+          <h4 class="text-center">Заказать обратный звонок</h4>
+          <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+          <input class="form-control" type="text" name="phone" placeholder="Ваш телефон">
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Заказать звонок</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Modals close -->
+<div class="wrapper">
+  <nav class="top-menu navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="top-menu__item"><a href="#">Главная</a></li>
+        <li class="top-menu__item"><a href="#">Каталог</a></li>
+        <li class="top-menu__item"><a href="#">Акции и спецпредложения</a></li>
+        <li class="top-menu__item"><a href="#">Новости</a></li>
+        <li class="top-menu__item"><a href="#">Оплата и доставка</a></li>
+        <li class="top-menu__item"><a href="#">Оптовые поставки</a></li>
+        <li class="top-menu__item"><a href="#">Контакты</a></li>
+        <li class="top-menu__item top-menu__item_basket navbar-right"><a href="#">
+          <img class="top-menu__item_basket_cart" src="img/cart.png" alt="Корзина" />
+          Корзина
+          <span class="top-menu__item_total-sum">130 990 Р</span>
+          <img class="menu-arrow" src="img/arrow-bl.svg" alt="" /></a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Mobile layout start -->
+
+  <div class="mobile hidden">
+    <section class="intro-mobile container-fluid">
+      <div class="intro-inner">
+        <div class="col-xs-12">
+          <div class="row">
+            <img src="img/logo-header.png" alt="Татметиз" class="logo-header col-xs-12 img-responsive">
+            <div class="" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="mobile-contacts" role="tab" id="headingOne">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Наши контакты
+                </a>
+              </div>
+            </div>
+          </div>
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="">
+                  <div class="intro__city col-xs-12">
+                    <p class="current-city">Набережные Челны</p><!--
+                    --><a class="change-city-link" href="#" data-toggle="modal" data-target=".change-city">Другой город</a>
+                  </div>
+                  <div class="intro__contact col-md-3">
+                    <p class="intro__contact_address"><i class="fa fa-location-arrow" aria-hidden="true"></i>Набережные Челны, улица М.Джалиля 55</p>
+                    <p class="intro__contact_phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 905 373 01 32</p>
+                    <a href="#" class="intro__contact_addition">и еще 2 номера</a>
+                    <br>
+                    <p class="intro__contact_time"><i class="fa fa-clock-o" aria-hidden="true"></i>с 8:00 до 19:00</p>
+                  </div>
+                  <div class="intro__phone col-md-3">
+                    <p class="intro__phone_number">+7 8552 &nbsp;711 &nbsp;411</p>
+                    <p><a href="#" data-toggle="modal" data-target=".callback-order">Заказать обратный звонок</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+  </div>
+
+
+  <!-- Mobile layout close -->
+
+<section class="intro desktop container-fluid">
+  <div class="intro-inner">
+    <div class="col-md-12">
+      <div class="row">
+        <a href="#"><img src="img/logo-header.png" alt="Татметиз" class="logo-header col-md-3 img-responsive"></a>
+        <a href="#"><img src="img/placeholder.png" alt="Татметиз" class="logo-header-small hidden"></a>
+        <div class="intro__city col-md-3">
+          <img src="img/separator.png" alt="divider" />
+          <p class="current-city">Набережные Челны</p>
+          <a class="change-city-link" href="#" data-toggle="modal" data-target=".change-city">Другой город</a>
+        </div>
+        <div class="intro__contact col-md-3">
+          <p class="intro__contact_address"><i class="fa fa-location-arrow" aria-hidden="true"></i>Набережные Челны, улица М.Джалиля 55</p>
+          <p class="intro__contact_phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 905 373 01 32</p>
+          <a href="#" class="intro__contact_addition">и еще 2 номера</a>
+          <br>
+          <p class="intro__contact_time"><i class="fa fa-clock-o" aria-hidden="true"></i>с 8:00 до 19:00</p>
+        </div>
+        <div class="intro__phone col-md-3">
+          <p class="intro__phone_number">+7 8552 &nbsp;711 &nbsp;411</p>
+          <a href="#" data-toggle="modal" data-target=".callback-order">Заказать обратный звонок</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="main container">
+    <aside class="sidebar col-md-2">
+      <ul class="sidebar__menu nav">
+          <li class="sidebar__menu_item"><a href="#">Новые&nbsp;товары <span class="sidebar__menu_item_new">155</span><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">Инструмент<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">Крепеж<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">Нержавеющий&nbsp;крепеж&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">оборудование<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">спецодежда<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">сухие смеси<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">такелаж<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">такелаж&nbsp;грузовой&nbsp;стрелы<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">химия<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">хозтовары<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">электрика<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+          <li class="sidebar__menu_item"><a href="#">скачать&nbsp;прайс<i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
+        </ul>
+        <!-- Banners start -->
+        <div class="sidebar__banner sidebar__banner_hit">
+          <a href="#"><h4 class="sidebar__banner_head-blue text-left"><span>Хиты<br>продаж</span></h4></a>
+          <a href="#"><p class="sidebar__banner_motto">Все хиты<img src="img/arrow-grey.svg" alt="Указатель"></p></a>
+          <a href="#"><img class="sidebar__banner_image-hand" src="img/hand.png" alt="рука, держащая болт" /></a>
+        </div>
+
+        <div class="sidebar__banner sidebar__banner_bulk">
+          <a href="#"><h4 class="sidebar__banner_head-green text-left"><span>Оптовые<br>скидки</span></h4></a>
+          <a href="#"><p class="sidebar__banner_motto">Условия<img src="img/arrow-grey.svg" alt="Указатель"></p></a>
+          <a href="#"><img class="sidebar__banner_image-elephant" src="img/elephant.png" alt="слон" /></a>
+        </div>
+
+        <div class="sidebar__banner sidebar__banner_delivery">
+          <a href="#"><h4 class="sidebar__banner_head-purple text-left"><span>оплата и<br>доставка</span></h4></a>
+          <a href="#"><p class="sidebar__banner_motto">Быстро и просто<img src="img/arrow-grey.svg" alt="Указатель"></p></a>
+          <a href="#"><img class="sidebar__banner_image-back" src="img/ghost-car.png" alt="автомобиль" />
+          <img class="sidebar__banner_image-front" src="img/coin.png" alt="монета" /></a>
+        </div>
+
+        <div class="sidebar__banner sidebar__banner_faq">
+          <a href="#"><h4 class="sidebar__banner_head-black text-left"><span>Задать<br>вопрос</span></h4></a>
+          <a href="#"><p class="sidebar__banner_motto-long">Есть предложения или остались вопросы &mdash; напишите нам, наши специалисты ответят втечение 30 минут!</p></a>
+          <a class="faq-button text-center" role="button" href="#">Задать вопрос</a>
+        </div>
+        <!-- Banners close -->
+    </aside>
+
+<div class="content">
+
+
+
+<!-- Slider start -->
+
+<div class="slider">
+    <div class="item slide slide--has-caption">
+        <img class="img-responsive" src="img/slide.jpg" alt="" />
+        <div class="slide-caption">
+          <h3>Акции и спецпредложения</h3>
+          <h1>поступление<br>товара</h1>
+          <a href="#" class="btn button-slide">подробнее</a>
+        </div>
+    </div>
+
+    <div class="item slide slide--has-caption">
+        <img class="img-responsive" src="img/slide.jpg" alt="" />
+        <div class="slide-caption">
+          <h3>Акции и спецпредложения</h3>
+          <h1>поступление<br>товара</h1>
+          <a href="#" class="btn button-slide">подробнее</a>
+        </div>
+    </div>
+
+    <div class="item slide slide--has-caption">
+        <img class="img-responsive" src="img/slide.jpg" alt="" />
+        <div class="slide-caption">
+          <h3>Акции и спецпредложения</h3>
+          <h1>поступление<br>товара</h1>
+          <a href="#" class="btn button-slide">подробнее</a>
+        </div>
+    </div>
+  </div>
+<!-- Slider close -->
+
+  <!-- Search form start -->
+  <div class="search container-fluid">
+    <div class="row col-md-12">
+      <h4 class="search__header">быстрый поиск</h4>
+      <p class="search__advanced"><a href="#">Расширенный поиск&nbsp;<img src="img/arrow-w.svg" alt="стрелка вправо" /></a></p>
+    </div>
+    <div class="row col-md-12">
+      <input type="text" class="search__input" name="search" placeholder="Например, болт">
+      <button type="submit" class="search__button btn" name="search">Искать!</button>
+    </div>
+  </div>
+  <!-- Search form close -->
+
+<!-- .showcase start -->
+
+  <div class="showcase container-fluid">
+    <div class="showcase__bestsellers">
+
+      <a href="#"><div class="bestsellers-item empty col-md-4 col-lg-4 col-sm-6 col-xs-12">
+          <img src="img/empty-bg.jpg" class="bestsellers-item__pic img-responsive" alt="Логотип" />
+          <div class="bestsellers-item__caption">
+            <div class="bestsellers__label-hit">Хит продаж</div>
+            <div class="serial">00069611</div>
+            <div class="item-name">Плащ-дождевик большой зеленый</div>
+          <div class="price"><span class="price-none">Цена по запросу&nbsp;</span><img src="img/arrow-grey.svg" alt="Указатель" /></div>
+          </div>
+        </div></a>
+
+      <a href="#"><div class="bestsellers-item col-md-4 col-lg-4 col-sm-6 col-xs-12">
+          <img src="img/boltM6.jpg" class="bestsellers-item__pic img-responsive" alt="Болт М6" />
+          <div class="bestsellers-item__caption">
+            <div class="bestsellers__label-hit">Хит продаж</div><br>
+            <div class="label_discount">%</div>
+            <div class="serial">00064689</div>
+            <div class="item-name">Болт М 6 Х 12 DIN 933 А2 нержавейка 500 шт./упак.</div>
+            <div class="price"><span class="price-discount">3.27 Р/шт.&nbsp;</span><img src="img/arrow-grey.svg" alt="Указатель" /></div>
+          </div>
+        </div></a>
+
+      <a href="#"><div class="bestsellers-item col-md-4 col-lg-4 col-sm-6 col-xs-12">
+          <img src="img/boltM20_w.jpg" class="bestsellers-item__pic img-responsive" alt="Болт М6" />
+          <div class="bestsellers-item__caption">
+            <div class="bestsellers__label-hit">Хит продаж</div><br>
+            <div class="label_new">новое</div>
+            <div class="serial">00072371</div>
+            <div class="item-name">Болт БСР М 20 Х 200 ГОСТ 28778-90 СТЗ</div>
+            <div class="price"><span class="price-regular">177 Р/шт.&nbsp;</span><img src="img/arrow-grey.svg" alt="Указатель" /></div>
+          </div>
+        </div></a>
+    </div>
+  </div>
+
+  <div class="catalogue container-fluid"> <!-- Fasten catalogue section start -->
+    <div class="row">
+      <div class="catalogue__fasten">
+        <div class="catalogue__fasten_category category-name col-md-4 col-sm-6">
+          <img src="img/cat-name-bg.png" alt="фон" class="category-item-pic">
+          <div class="category-name-caption">
+            <h3 class="cat-header">Крепёж</h3>
+            <p class="cat-amount">21 категория</p>
+            <a href="#" class="catalogue-details btn" role="button">каталог</a>
+          </div>
+        </div>
+        <a href="#" class="category-item-link col-md-4 col-sm-6">
+          <div class="catalogue__fasten_category__anker category-item">
+            <img src="img/boltANK_g.jpg" class="category-item-pic" alt="Болт анкерный" />
+            <div class="category-item-caption">
+              <h3 class="cat-header">Анкера</h3>
+            </div>
+            <div class="category-item-overlay">
+              <h3 class="cat-header">Анкера</h3>
+              <img src="img/arrow-w.svg" alt="указатель" />
+            </div>
+          </div>
+        </a>
+      <a href="#" class="category-item-link col-md-4 col-sm-6">
+        <div class="catalogue__fasten_category__bolt category-item">
+          <img src="img/boltM20_g.jpg" class="category-item-pic" alt="Болт М20" />
+          <div class="category-item-caption">
+            <h3 class="cat-header">Болты</h3>
+          </div>
+          <div class="category-item-overlay">
+            <h3 class="cat-header">Болты</h3>
+            <img src="img/arrow-w.svg" alt="указатель" />
+          </div>
+        </div>
+      </a>
+        <a href="#" class="category-item-link col-md-4 col-sm-6">
+          <div class="catalogue__fasten_category__vint category-item">
+            <img src="img/cross-bolt-pic.jpg" class="category-item-pic" alt="Винты" />
+            <div class="category-item-caption">
+              <h3 class="cat-header">Винты</h3>
+            </div>
+            <div class="category-item-overlay">
+              <h3 class="cat-header">Винты</h3>
+              <img src="img/arrow-w.svg" alt="указатель" />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="category-item-link col-md-4 col-sm-6">
+          <div class="catalogue__fasten_category__gayki category-item">
+            <img src="img/screw-nut-pic.jpg" class="category-item-pic" alt="Гайки" />
+            <div class="category-item-caption">
+              <h3 class="cat-header">Гайки</h3>
+            </div>
+            <div class="category-item-overlay">
+              <h3 class="cat-header">Гайки</h3>
+              <img src="img/arrow-w.svg" alt="указатель" />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="category-item-link col-md-4 col-sm-6">
+          <div class="catalogue__fasten_category__gvozdi category-item">
+            <img src="img/nails-pic.jpg" class="category-item-pic" alt="Гвозди" />
+            <div class="category-item-caption">
+              <h3 class="cat-header">Гвозди</h3>
+            </div>
+            <div class="category-item-overlay">
+              <h3 class="cat-header">Гвозди</h3>
+              <img src="img/arrow-w.svg" alt="указатель" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div> <!-- Fasten catalogue section close -->
+
+    <div class="row"> <!-- Gear catalogue section start -->
+      <div class="catalogue__gear">
+        <div class="catalogue__gear_category category-name col-md-4 col-sm-6">
+          <img src="img/cat-name-bg.png" alt="фон" class="category-item-pic">
+          <div class="category-name-caption">
+            <h3 class="cat-header">такелаж</h3>
+            <p class="cat-amount">15 категорий</p>
+            <a href="#" class="catalogue-details btn" role="button">каталог</a>
+          </div>
+        </div>
+        <a href="#" class="category-item-link col-md-4 col-sm-6">
+          <div class="catalogue__fasten_category__anker category-item">
+            <img src="img/swivel.jpg" class="category-item-pic" alt="Вертлюги" />
+            <div class="category-item-caption">
+              <h3 class="cat-header">Вертлюги</h3>
+            </div>
+            <div class="category-item-overlay">
+              <h3 class="cat-header">Вертлюги</h3>
+              <img src="img/arrow-w.svg" alt="указатель" />
+            </div>
+          </div>
+        </a>
+      <a href="#" class="category-item-link col-md-4 col-sm-6">
+        <div class="catalogue__fasten_category__bolt category-item">
+          <img src="img/press-lock.jpg" class="category-item-pic" alt="Зажимы" />
+          <div class="category-item-caption">
+            <h3 class="cat-header">Зажимы</h3>
+          </div>
+          <div class="category-item-overlay">
+            <h3 class="cat-header">Зажимы</h3>
+            <img src="img/arrow-w.svg" alt="указатель" />
+          </div>
+        </div>
+      </a>
+        <a href="#" class="category-item-link col-md-4 col-sm-6">
+          <div class="catalogue__fasten_category__vint category-item">
+            <img src="img/carbine.jpg" class="category-item-pic" alt="Карабины" />
+            <div class="category-item-caption">
+              <h3 class="cat-header">Карабины</h3>
+            </div>
+            <div class="category-item-overlay">
+              <h3 class="cat-header">Карабины</h3>
+              <img src="img/arrow-w.svg" alt="указатель" />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="category-item-link col-md-4 col-sm-6">
+          <div class="catalogue__fasten_category__gayki category-item">
+            <img src="img/s-hook-pic.jpg" class="category-item-pic" alt="Крюки" />
+            <div class="category-item-caption">
+              <h3 class="cat-header">крюки типа S</h3>
+            </div>
+            <div class="category-item-overlay">
+              <h3 class="cat-header">крюки типа S</h3>
+              <img src="img/arrow-w.svg" alt="указатель" />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="category-item-link col-md-4 col-sm-6">
+          <div class="catalogue__fasten_category__gvozdi category-item">
+            <img src="img/chain-join-pic.jpg" class="category-item-pic" alt="Соеднители цепей" />
+            <div class="category-item-caption">
+              <h3 class="cat-header">Соединители цепей</h3>
+            </div>
+            <div class="category-item-overlay">
+              <h3 class="cat-header">Соединители цепей</h3>
+              <img src="img/arrow-w.svg" alt="указатель" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- .showcase close -->
+
+<!-- About start -->
+
+  <article class="about">
+    <h2 class="about-heading text-center">О компании</h2>
+    <p>Что такое шуруп? Шуруп (от немецкого Schraube) - это винт, который вворачивается в какой-либо мягкий материал (например, дерево), самостоятельно образуя в нём резьбу. Способность ввертывания в мягкие материалы шуруп получает за счет резьбы, покрывающей его стержень. Резьба шурупа отличается от резьбы винтов и болтов, которые вворачиваются в металл. Она выше и имеет больший шаг нарезки. Резьбовой участок шурупа конической формы, сужающийся к концу. Резьба может быть нарезана по всей длине или по части шурупа.</p>
+    <p>Размеры шурупов разнообразны и зависят от того, для чего они предназначены. Так, например, есть совсем небольшой по размеру шуруп, который в простонародье называют "клопом", имеет длину 8 мм, а диаметр 4 мм, и часто служит в качестве крепления шильдиков к готовым изделиям. А для крепления железнодорожных рельс к шпалам используется так называемый путевой шуруп, который имеет длину 170 мм, а диаметр - 24 мм. Также шурупы имеют различные формы головок, которые определяются условиями монтажа, внешнему виду изделия и требованиями к монтируемой конструкции.</p>
+    <h5><strong>Оплата и доставка</strong></h5>
+    <p>Размеры шурупов разнообразны и зависят от того, для чего они предназначены. Так, например, есть совсем небольшой по размеру шуруп, который в простонародье называют "клопом", имеет длину 8 мм, а диаметр 4 мм, и часто служит в качестве крепления шильдиков к готовым изделиям. А для крепления железнодорожных рельс к шпалам используется так называемый путевой шуруп, который имеет длину 170 мм, а диаметр - 24 мм.</p>
+    <a href="#">Подробности в разделе Оплата и доставка</a>
+    <h5><strong>Оптовые поставки</strong></h5>
+    <p>Размеры шурупов разнообразны и зависят от того, для чего они предназначены. Так, например, есть совсем небольшой по размеру шуруп, который в простонародье называют "клопом", имеет длину 8 мм, а диаметр 4 мм, и часто служит в качестве крепления шильдиков к готовым изделиям.</p>
+    <a href="#">Информация для оптовиков</a>
+  </article>
+
+<!-- About close-->
+
+  </div> <!-- .content close -->
+</div> <!-- .main close -->
+<footer class="footer container-fluid">
+  <div class="footer-inner row">
+    <div class="footer__logo-group col-md-3 col-sm-12 col-xs-12">
+      <a href="#"><img class="footer__logo" src="img/logo-footer.jpg" alt="логотип" /></a>
+      <p class="footer-legal">
+        &copy; ТАТМЕТИЗ<br>Крепеж и стройматериалы<br>Все права защищены
+      </p>
+      <p class="development">Разработка сайта &mdash; <a href="http://www.netkam.ru/" target="_blank">Неткам</a></p>
+    </div>
+    <ul class="footer__categories col-md-3 col-sm-12 col-xs-12">
+      <li><a href="#">Крепёж</a></li>
+      <li><a href="#">Нержавеющий крепёж</a></li>
+      <li><a href="#">Инструмент</a></li>
+      <li><a href="#">Оборудование</a></li>
+      <li><a href="#">Спецодежда</a></li>
+    </ul>
+    <ul class="footer__events col-md-3 col-sm-12 col-xs-12">
+      <li><a href="#">Новые товары</a></li>
+      <li><a href="#">Акции и спецпредложения</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Оплата и доставка</a></li>
+      <li><a href="#">Оптовые поставки</a></li>
+    </ul>
+
+    <div class="footer__contacts col-md-3 col-sm-12 col-xs-12">
+      <div class="footer__phone">
+        <p class="footer__phone_number">+7 8552 &nbsp;711 &nbsp;411</p>
+        <a href="#" data-toggle="modal" data-target=".callback-order">Заказать обратный звонок</a>
+      </div>
+      <p class="footer__address">Набережные Челны, улица М.Джалиля 55, с 8:00 до 19:00</p>
+      <a class="footer__email" href="mailto:renat@tatmetiz.ru">renat@tatmetiz.ru</a>
+    </div>
+  </div>
+</footer>
+</div> <!-- .wrapper close -->
+<script src="libs/jquery.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="libs/slick/slick.min.js" type="text/javascript"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

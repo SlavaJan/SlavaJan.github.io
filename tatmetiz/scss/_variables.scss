@@ -1,0 +1,26 @@
+$blue: #00a7e5;
+$grey: #ebebeb;
+$dark-grey: #9d9d9d;
+$black: #282828;
+$light-black: #3b3b3b;
+$green: #5cbc07;
+$dark-green: #00d26d;
+$purple: #8948aa;
+$orange: #e5a200;
+
+@mixin ghost-button {
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-family: 'LatoRegular';
+    font-size: 1.4rem;
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+      background-color: #fff;
+      color: $blue;
+      border-bottom: none;
+      transition: .2s;
+    }
+  }

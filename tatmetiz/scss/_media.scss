@@ -1,0 +1,148 @@
+@media (max-width: 480px) {
+  .button-slide {
+    width: 100px!important;
+    height: 30px!important;
+    line-height: 25px!important;
+    font-size: 1em!important;
+  }
+  .search {
+    padding: 5px!important;
+    height: 100px!important;
+    .search__input {
+      width: 70%!important;
+    }
+    .search__button {
+      width: 23%!important;
+      padding: 3px!important;
+      font-size: 0.9em!important;
+    }
+    .search__advanced {
+      display: none!important;
+    }
+  }
+  .serial {
+    top: 200px!important;
+  }
+  .item-name {
+    top: 220px!important;
+  }
+  .catalogue__fasten,
+  .catalogue__gear {
+    background-color: #fff!important;
+  }
+  .category-item-link {
+    display: none!important;
+  }
+}
+@media (max-width: 768px) {
+  .slick-dots {
+    display: none!important;
+  }
+  .slide-caption {
+    width: 100%!important;
+    height: 100%!important;
+    top: 0!important;
+    left: 0!important;
+    h3 {
+      margin: 5px!important;
+    }
+    h1 {
+      font-size: 3rem!important;
+      margin: 15px 5px!important;
+    }
+    .button-slide {
+      position: absolute!important;
+      bottom: 10px!important;
+      right: 10px!important;
+
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+
+  aside {
+    display: none!important;
+  }
+  .content {
+    width: 100%!important;
+    max-width: 100%!important;
+    padding: 0 16px;
+  }
+
+  .intro-mobile {
+    padding: 0!important;
+  }
+
+}
+
+@media (max-width: 1170px) {
+  .desktop {
+    display: none!important;
+  }
+  .mobile {
+    display: block!important;
+  }
+}
+
+@media (max-width: 1225px) {
+  .desktop {
+    display: none!important;
+  }
+
+  .mobile {
+    display: block!important;
+    background-color: $grey;
+    padding: 16px!important;
+  }
+  .mobile-contacts {
+    padding: 10px!important;
+    font-size: 2rem!important;
+    display: inline-block!important;
+    margin: 0 auto!important;
+  }
+
+  .intro__city,
+  .intro__contact,
+  .intro__phone {
+    padding: 0!important;
+    margin: 0!important;
+    display: inline-block!important;
+  }
+  .intro__phone_number {
+    padding-top: 15px!important;
+  }
+  .intro__phone a {
+    margin: 0!important;
+  }
+  .intro__city {
+    .change-city-link {
+      margin-top: 5px;
+      margin-left: 14px;
+    }
+  }
+  .intro__contact {
+    margin-top: 10px!important;
+  }
+  .intro__contact_addition {
+    margin-left: 22px;
+  }
+  .footer__phone {
+    margin: 0!important;
+    .footer__phone_number {
+      text-align: left!important;
+    }
+    a {
+      margin: 0!important;
+    }
+  }
+  .footer__address, .footer__email {
+    margin: 0!important;
+  }
+  .footer-inner div, .footer-inner ul {
+    margin-bottom: 15px!important;
+  }
+  .category-item-overlay {
+    display: none!important;
+  }
+}
